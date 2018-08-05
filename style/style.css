@@ -340,7 +340,8 @@ section.animate .scheduleBox > div {
   border-radius: 0.00293rem; }
 
 #messageBoard .postMessage .submit {
-  width: 0.0366rem;
-  height: 0.02196rem;
+  /* width: 0.0366rem;
+  height: 0.02196rem; */
+  padding: 0.00439rem 0.01098rem;
   border-radius: 0.00293rem;
   background-color: #e6686a; }
