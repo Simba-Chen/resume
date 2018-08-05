@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>陈辛达个人简历</title>
+    <script>
+        let pageWidth = window.innerWidth
+        document.write(`<style>html{font-size: ${pageWidth}px}</style>`)
+    </script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link rel="stylesheet" href="./style/loading.css">
+    <link rel="stylesheet" href="./style/slide.css">
+</head>
+<body>
+    <div id="welcome" class="welcome active">
+        <div class="loading"></div>
+    </div>
+    <div id="topNavbar" class="navbar clearfix">  
+        <a class="logo" href="#">
+            <span class="rs">RS</span>
+            <span class="card">card</span>
+        </a>       
+        <nav>
+            <ul class="clearfix">
+                <li><a href="#about">关于</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#portfolio">作品</a></li>
+                <li><a href="#messageBoard">留言板</a></li>
+            </ul> 
+        </nav>
+    </div>
+    <div class="banner"><div class="mark"></div></div>
+    <main>
+        <div data-x id="about" class="user-card">
+            <div class="text-and-user-card clearfix">
+                <div class="picture">
+                    <img src="./images/avatar.jpg" alt="picture"> 
+                </div>
+                <div class="text">              
+                    <span class="hello"><span class="trigangle"></span>hello</span>
+                    <h1>陈辛达</h1>
+                    <h2>前端开发工程师</h2>
+                    <hr>
+                    <dl>
+                        <dt>年龄:</dt>
+                        <dd>27</dd>
+                        <dt>地址:</dt>
+                        <dd>湖北武汉</dd>
+                        <dt>邮箱:</dt>
+                        <dd>chenxinda520@qq.com</dd>
+                        <dt>手机:</dt>
+                        <dd>18627841680</dd>
+                    </dl>                              
+                </div> 
+            </div> 
+            <footer class="media">
+                <a href="#" target="_blank">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                    <div><div class="img-qq"></div></div>
+                                    
+                </a>
+                <a href="#" target="_blank">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weixin"></use>
+                    </svg>
+                    <div><div class="img-weixin"></div></div>
+                                                         
+                </a>
+                <a href="https://www.zhihu.com/people/chen-xin-da-15-90/activities" target="_blank">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                </a>
+                <a href="https://github.com/Simba-Chen" target="_blank">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+            </footer>       
+        </div> 
+        <p class="download-wrapper">
+            <a href="./resume.doc" class="download" target="_blank" download>下载简历</a>  
+        </p>          
+        <p class="self">您好！我是陈辛达，现离职待业中，期待与您合作！</p>
+    </main>
+    <section data-x id="skills">
+        <div class="skillBox">
+            <h2>技&nbsp;&nbsp;能</h2>
+            <div class="skills">
+                <ol class="clearfix">
+                    <li>
+                        <h3>HTML 5 &amp; CSS 3</h3>
+                        <div class="scheduleBox"><div class="schedule1"></div></div>
+                    </li>
+                    <li>
+                        <h3>Javascript</h3>
+                        <div class="scheduleBox"><div class="schedule2"></div></div>
+                    </li>
+                    <li>
+                        <h3>jQuery</h3>
+                        <div class="scheduleBox"><div class="schedule3"></div></div>
+                    </li>
+                    <li>
+                        <h3>Node.js</h3>
+                        <div class="scheduleBox"><div class="schedule4"></div></div>
+                    </li>
+                    <li>
+                        <h3>Webpack</h3>
+                        <div class="scheduleBox"><div class="schedule5"></div></div>
+                    </li>
+                    <li>
+                        <h3>HTTP</h3>
+                        <div class="scheduleBox"><div class="schedule6"></div></div>
+                    </li>
+                </ol>
+            </div>           
+        </div>     
+    </section>
+    <footer data-x id="portfolio" class="portfolio">
+        <h2>作&nbsp;&nbsp;品&nbsp;&nbsp;集</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/Yao.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/Wade.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/Garnett.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/Rose.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/Kobe.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/Iverson.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>              
+    </footer>
+    <div data-x id="messageBoard">
+        <h2>留&nbsp;&nbsp;言&nbsp;&nbsp;板</h2>
+        <ul class="messageList"></ul>
+        <form class="postMessage">
+            <label for="content">留言内容：</label>
+            <input type="text" name="content" id="content">
+            <input class="submit" type="submit" value="留言">
+        </form>
+    </div> 
+    <script src="https://at.alicdn.com/t/font_711609_5ytbmycr7rd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.7.3/dist/av-min.js"></script>
+    <!--模块化-->
+    <script src="./js/loading.js"></script>
+    <script src="./js/slides.js"></script>
+    <script src="./js/navBar.js"></script>
+    <script src="./js/aotuScroll.js"></script>
+    <script src="./js/scrollHighLight.js"></script>
+    <script src="./js/av.js"></script>
+</body>
+</html>
